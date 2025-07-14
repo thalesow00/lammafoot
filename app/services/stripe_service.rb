@@ -37,7 +37,9 @@ class StripeService
     Stripe::Checkout::Session.retrieve(session_id)
   end
 
-  def create_payment_intent(amount, currency = "eur", metadata = {})
+  def create_payment_intent(amount, currency = "eur", metadata = {})   
+
+    
     Stripe::PaymentIntent.create({
       amount: (amount * 100).to_i,
       currency: currency,
