@@ -1,4 +1,6 @@
 source "https://rubygems.org"
+#format pdf de la structure du DB
+gem 'rails-erd'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 8.0.2"
